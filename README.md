@@ -1,2 +1,2 @@
 # Plague
-An open source library for making Minigames or large rpg games in bukkit.
+A 1.16 native broad api for plugin development
