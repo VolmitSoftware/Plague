@@ -1,4 +1,4 @@
-package mortar.util.text;
+package com.volmit.plague.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -33,6 +33,27 @@ public class RTX
 	public void add(JSONObject object)
 	{
 		base.put(object);
+	}
+
+	public void addAll(RTX rt)
+	{
+		for(int i = 0; i < rt.base.length(); i++)
+		{
+			try
+			{
+				add(rt.base.getJSONObject(i));
+			}
+
+			catch(Throwable e)
+			{
+
+			}
+		}
+	}
+
+	public JSONArray getBase()
+	{
+		return base;
 	}
 
 	/**

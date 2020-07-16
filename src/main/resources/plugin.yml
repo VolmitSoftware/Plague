@@ -1,6 +1,7 @@
 name: ${project.name}
-main: com.volmit.plague.Plague
+main: com.volmit.plague.core.Plague
 version: ${project.version}
 load: STARTUP
+api-version: 1.16
 commands: 
-    plague:
+    test: 

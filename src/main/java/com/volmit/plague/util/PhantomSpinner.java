@@ -1,4 +1,4 @@
-package mortar.util.text;
+package com.volmit.plague.util;
 /**
  * Colored circle spinner
  *

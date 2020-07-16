@@ -1,6 +1,6 @@
-package mortar.util.text;
+package com.volmit.plague.util;
 
-import mortar.util.text.C;
+import com.volmit.plague.util.C;
 
 /**
  * Represents a colored String

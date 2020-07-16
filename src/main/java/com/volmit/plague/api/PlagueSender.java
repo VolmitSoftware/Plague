@@ -10,9 +10,10 @@ import org.bukkit.permissions.PermissionAttachment;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.Plugin;
 
+import com.volmit.plague.util.C;
+
 import lombok.Getter;
 import lombok.Setter;
-import mortar.util.text.C;
 
 public class PlagueSender implements CommandSender
 {

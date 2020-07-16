@@ -7,6 +7,8 @@
 	<version>1.0</version>
 	<name>Plague</name>
 	<properties>
+		<secretary.monitor>src</secretary.monitor>
+		<secretary.build>package</secretary.build>
 		<native.bukkit.version>1.16.1</native.bukkit.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -19,7 +21,6 @@
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
 				<includes>
-					<include>**/*.xml</include>
 					<include>**/*.yml</include>
 					<include>**/*.txt</include>
 					<include>**/*.properties</include>
@@ -63,6 +64,9 @@
 						<goals>
 							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<minimizeJar>true</minimizeJar>
+						</configuration>
 					</execution>
 				</executions>
 				<configuration>

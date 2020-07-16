@@ -1,4 +1,4 @@
-package mortar.util.text;
+package com.volmit.plague.util;
 
 import ninja.bytecode.shuriken.execution.J;
 import ninja.bytecode.shuriken.reaction.O;
