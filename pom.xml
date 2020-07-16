@@ -7,6 +7,7 @@
 	<version>1.0</version>
 	<name>Plague</name>
 	<properties>
+		<native.bukkit.version>1.16.1</native.bukkit.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -76,27 +77,30 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<!-- Spigot & Craftbukkit -->
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot-full</artifactId>
-			<version>1.12.2</version>
+			<version>${native.bukkit.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.10</version>
+			<groupId>org.bukkit.craftbukkit</groupId>
+			<artifactId>cb-${native.bukkit.version}</artifactId>
+			<version>${native.bukkit.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Utilities -->
 		<dependency>
 			<groupId>ninja.bytecode</groupId>
 			<artifactId>Shuriken</artifactId>
 			<version>1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>28.2-jre</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.10</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<repositories>
@@ -107,11 +111,6 @@
 		<repository>
 			<id>bcn</id>
 			<url>http://bytecode.ninja/repository/bcn/</url>
-		</repository>
-		<repository>
-			<id>jcenter</id>
-			<name>jcenter-bintray</name>
-			<url>https://jcenter.bintray.com</url>
 		</repository>
 	</repositories>
 </project>

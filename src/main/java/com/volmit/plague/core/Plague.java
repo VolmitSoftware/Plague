@@ -1,4 +1,4 @@
-package com.volmit.plague;
+package com.volmit.plague.core;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
